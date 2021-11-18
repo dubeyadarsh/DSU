@@ -47,6 +47,7 @@ class Main
 	    int temp=find(par[x]);
 	    par[x]=temp;
 	    return temp;
+// 		path compression is important ,
 	}
 	static void union(int x,int y){
 	    int lx=find(x);
@@ -65,4 +66,8 @@ class Main
 	    }
 	    
 	}
+// 	Note :-  lets say in above case 4 is leader of 5 and 6 is leader of 7 when u will start joining
+// 		 5 to 7 u will encounter 2 different leader having same rank so now hum 5 ke parent 
+// 		 array me 7 dalenege aur 4 k parent array me 5 hai but 4 ka leader 7 hai isiliye hum find method
+// 		 me direct par[x] nahi return karte hai .
 }
