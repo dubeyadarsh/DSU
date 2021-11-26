@@ -64,10 +64,14 @@ class Main
 	        rank[ly]++;
 	    }
 	    }
-	    
+// Time Complexity of Union is O(1) and Time complexity of Find is O(logN) hence overall time complexity of union function is O(logN) ..
+// This Time complexity is  measeured without rank and path compression.... When u compute it using Path compression time complexity reduxed to O(4alpha)
 	}
 // 	Note :-  lets say in above case 4 is leader of 5 and 6 is leader of 7 when u will start joining
 // 		 5 to 7 u will encounter 2 different leader having same rank so now hum 5 ke parent 
 // 		 array me 7 dalenege aur 4 k parent array me 5 hai but 4 ka leader 7 hai isiliye hum find method
 // 		 me direct par[x] nahi return karte hai .
 }
+//One of the  Application of DSU is kuruskals Algorithm 
+// Another Application is To find out cycle in graph
+
